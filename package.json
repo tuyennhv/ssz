@@ -4,6 +4,9 @@
   "workspaces": [
     "packages/*"
   ],
+  "exports": {
+    "./packages/as-chacha20poly1305/lib/src/index": "./packages/as-chacha20poly1305/lib/src/index.js"
+  },
   "scripts": {
     "clean": "rm -rf ./packages/*/lib ./packages/*/*.tsbuildinfo",
     "build": "yarn clean && lerna run build",
